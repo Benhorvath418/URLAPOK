@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlapok</title>
+    <link rel="shortcut icon" href="kepek/kep.PNG" type="image/png">
+    <script>
+        function szamol(params){
+            var ev=document.korszamitas.szulev.value*1;
+            document.korszamitas.kor.value=2021-ev;
+        }
+    </script>
+</head>
+<body>
+    <h1>Egy kis programozás JavaScript segítségével</h1>
+    <form name="korszamitas">
+    <font>Születési éved:
+    <input type="text" name="szulev" id=""><br>
+    <input type="button" value="Számol" onclick="szamol()"> <br>
+        Az életkorod:
+        <input type="text" name="kor" id="">
+        éves vagy. :-) <br>
+        <input type="reset" value="Törlés">
+    </font>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Személyes adatlap</legend>
+            Név:
+            <input type="text" name="nev" id=""><br>
+            Ilyen vagyok: <br>
+            <textarea name="bemutat" id="" cols="30" rows="10"></textarea><br>
+            Nemem: <br>
+            <input type="radio" name="nem" id="" value="Férfi" checked>
+            Férfi <br>
+            <input type="radio" name="nem" id="" value="Nő" checked>
+            Nő <br>
+            Hobbim:
+            <select name="hobbi" id="">
+                <option value="olvasás">Irodalmi művek olvasása</option>
+                <option value="zenehallgatás">Komoly zene hallgatása</option>
+                <option value="főzés">Gasztronómiai tevékenység</option>
+                <option value="horgászat">Folyóvízi horgászat</option>
+                <option value="semmittevés">Álmodozás</option>
+            </select> <br>
+            Mobiltelefon szolgáltatóm:
+            <br>
+            <input type="checkbox" name="telszolg" id="" value="telekom">Telekom <br>
+            <input type="checkbox" name="telszolg" id="" value="telenor">Telenor<br>
+            <input type="checkbox" name="telszolg" id="" value="vodafone+UPC">Vodafone + UPC <br>
+            <input type="checkbox" name="telszolg" id="" value="digi">Digi<br>
+            Email-cím:
+            <input type="text" name="email" id=""><br>
+            Jelszó:
+            <input type="password" name="jelszo" id="">
+            <input type="reset" value="Törlés">
+            <input type="button" value="Elküldés">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
